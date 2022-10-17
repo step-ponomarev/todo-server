@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { LoginService } from './form/login.service';
-import { LoginController } from "./form/login.controller";
+import { LoginService } from './login/login.service';
+import { LoginController } from "./login/login.controller";
 import { join } from "path";
 import { ServeStaticModule } from "@nestjs/serve-static";
 
