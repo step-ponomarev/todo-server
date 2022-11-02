@@ -30,7 +30,7 @@ export class TodoController {
         return this.todoStore.get(id);
     }
     
-    @Get('ge')
+    @Get('get')
     public getAll(): Task[] {
         return this.todoStore.getAll();
     }
