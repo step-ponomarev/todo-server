@@ -7,4 +7,5 @@ import { TodoController } from "./todo/todo.controller";
     providers: [ TodoStore ]
 })
 
-export class AppModule {}
+export class AppModule {
+}
