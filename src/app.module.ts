@@ -1,16 +1,10 @@
 import { Module } from '@nestjs/common';
-import { LoginService } from './login/login.service';
-import { LoginController } from "./login/login.controller";
-import { join } from "path";
-import { ServeStaticModule } from "@nestjs/serve-static";
+import { TodoStore } from './todo/todo.store';
+import { TodoController } from "./todo/todo.controller";
 
 @Module({
-  imports: [
-      ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'static'),
-    }),
-  ],
-  controllers: [LoginController],
-  providers: [LoginService],
+    controllers: [ TodoController ],
+    providers: [ TodoStore ]
 })
+
 export class AppModule {}
